@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1 id="arr"> </h1>
+text <input type="text" id="tet"> <br> <br>
+index <input type="text" id = "ind"> <br> <br>
+
+<button onclick="add_to_arr()"> Add to Array </button>
+<button onclick="r_muv()"> Remove from Array </button>
+<button onclick="rep_val()"> Replace a value</button>
+
+<script>
+   var users = ["Heritage", "Delight", "D"];
+    document.getElementById("arr").innerText = users;   
+    // var h = "io"; 
+    //  users[0] = h;
+    console.log(users);
+
+    function add_to_arr(){
+     var x = document.getElementById("tet").value;
+     users.push(x);
+     console.log(users);
+     document.getElementById("arr").innerText = users;  
+    }
+
+    // function r_muv(){
+    //   var a = document.getElementById("tet").value;
+    //   users.pop(a); 
+    //   document.getElementById("arr").innerText = users;  
+       
+    // }
+
+
+   
+
+    function r_muv(){
+        var i = document.getElementById("tet").value;
+        var l = document.getElementById("ind").value;
+       
+      var a = users.splice(index,l);
+     
+      document.getElementById("arr").innerText = users;  
+      console.log(users);
+    }
+
+
+    // function r_muv(){
+    //     // var i = document.getElementById("tet").value;
+    //     var l = document.getElementById("ind").value;
+       
+    //     for (i = document.getElementById("tet").value; i < users.length; i++){
+    //           if(i == 0){
+    //             users.splice(users.indexOf(i),l);
+    //             document.getElementById("arr").innerText = users;  
+    //           } else if (i == 1){
+    //             users.splice(users.indexOf(i),l);
+    //             document.getElementById("arr").innerText = users;  
+    //           } else if (i == 2){
+    //             users.splice(users.indexOf(i),l);
+    //             document.getElementById("arr").innerText = users;  
+    //           } 
+    //           else{
+    //               alert("NO");
+    //           }
+    //     }
+    
+    // }
+
+
+    // function r_muv(){
+    //    for(var i = users.length-1; i--;){
+    //      if(users[i] === "Heritage") {
+    //          users.splice(i,1);
+    //      }
+    //    }
+    
+    // }
+
+
+
+
+
+
+    function rep_val(){
+        var z = document.getElementById("tet");
+        var w = document.getElementById("ind");
+        users[w.value] = z.value;
+        document.getElementById("arr").innerText = users;  
+        console.log(users);
+    }
+
+        
+    </script>
+</body>
+</html>

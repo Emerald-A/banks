@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> </p>
+    <input id="outp" type="text">
+ <button id="1" onclick=" reply_click(this.id)"> 1</button>
+ <button id="2" onclick=" reply_click(this.id)"> 2</button>
+ <button id="3" onclick=" reply_click(this.id)"> 3</button>
+ <button id="+" onclick=" reply_click(this.id)"> +</button>
+ <button id="=" onclick=" equal_s()"> =</button>
+
+ <script>
+     function reply_click(clicked_id){
+         document.getElementById("outp").value = clicked_id;
+        //  alert(clicked_id);
+      
+
+        //  if(reply_click(this.id)){
+        //      alert("yes");
+        //  } else{
+        //      alert("no");
+        //  }
+   }
+
+   function equal_s(){
+      if(clicked_id == "+"){
+        // var x =  document.getElementById("outp").value;
+        // x = x + x;
+        var x = "leave";
+        document.getElementById("outp").value = x;
+
+      }
+   }
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="style.js"></script>
+
+
+
+
+<!-- <input id ="screen" type="number"  disabled>
+
+<button onclick="one(1)"> 1</button>
+<button onclick="one(2)"> 2</button>
+<button onclick="one(3)"> 3</button>
+<button onclick="one(4)"> 4</button>
+<button onclick="one(5)"> 5</button>
+<button onclick="one(6)"> 6</button>
+<button onclick="one(7)"> 7</button>
+<button onclick="one(8)"> 8</button>
+<button onclick="one(9)"> 9</button>
+<button onclick="one(0)"> 0</button>
+<button onclick="clar()"> C</button>
+<button onclick="delet()"> DEL</button>
+
+<script>
+    function one(num){
+        document.getElementById("screen").value += num;
+    }
+   
+    function clar(){
+        console.log("kbkjbkj")
+        let screenvalue = document.getElementById("screen");
+        let lenghtofstr = String(screenvalue.value).length;
+        let partofstr = String(screenvalue.value).slice(0, lenghtofstr -1);
+        document.getElementById("screen").value = partofstr;
+      
+    } -->
+
+    <!-- // function delet(){
+    //     let name =  document.getElementById("screen").value;
+    //  name = name.slice(0, -1);
+    // console.log(name);
+    //  document.getElementById("screen").value = name;  
+    // }
+</script> -->
+
+
+<!--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  -->
+
+<!-- <script>
+    var n = 5;
+
+    for(var i = 0; i <= n; i++ ){
+        n += 1;
+        console.log(n);
+
+    }
+</script> -->
+
+
+    <!-- <p onclick="depo()">Deposit </p>
+    <p onclick="wit()"> Withdraw</p>
+    <p onclick="bal()"> Check balance</p>
+
+    <script>
+        var balance = 500;
+
+        function depo(){
+            var dep = prompt("Enter Amount");
+            balance += +dep;
+            console.log(balance);
+        }
+
+        function wit(){
+           var withdraw = prompt(" Enter 1 to make a withdraw");
+
+           alert("Your balance is " + balance);
+           var withd = prompt("Enter Pin");
+           // validate
+           var withdr = prompt("Enter amount");
+           var amount = balance - withdr;
+           console.log("You have withrawn " + withdr + "Your balance is " + amount); 
+            
+        }
+        function bal(){
+            console.log("Your balance is " + amount);
+        }
+    </script> -->
+</body>
+</html>
